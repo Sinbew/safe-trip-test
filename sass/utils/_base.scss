@@ -1,0 +1,49 @@
+body {
+  font-family: var(--font-main);
+  color: var(--main-black);
+  letter-spacing: 0.03em;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.grid {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  }
+}

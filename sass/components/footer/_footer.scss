@@ -1,0 +1,33 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and(min-width:1200px) {
+    text-align: start;
+  }
+}
+
+.footer__adress-group {
+}
