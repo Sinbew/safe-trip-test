@@ -1,49 +1,31 @@
 body {
   font-family: var(--font-main);
-  color: var(--main-black);
-  letter-spacing: 0.03em;
+  color: var(--main-dark);
 
-  &.no-scroll {
-    overflow: hidden;
+  background-position: -18% 0px;
+  background-size: 48.3vw, 100vw;
+
+  background-repeat: no-repeat;
+  background-image: url('../images/hero.png'), url('../images/main-background/main-bg.jpg');
+
+  @media (orientation: portrait) {
+    background-image: url('../images/hero.png');
+    background-size: 100%;
   }
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and(min-width:1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .container {
+  max-width: 1200px;
+  // outline: 2px solid red;
+  padding: 0 20px;
+
   margin-left: auto;
   margin-right: auto;
 
-  padding: 0 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-
-.grid {
-  display: flex;
-
-  flex-wrap: wrap;
-  gap: 30px;
-
-  &__item {
-    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  @media screen and(min-width:1440px) {
+    max-width: 1440px;
   }
 }
