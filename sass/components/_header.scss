@@ -33,6 +33,10 @@
 .header-nav-list {
   display: flex;
   gap: 40px;
+
+  @media (orientation: portrait) {
+    gap: 20px;
+  }
 }
 
 .header-nav-item {
@@ -47,7 +51,7 @@
 
   @media (orientation: portrait) {
     color: var(--main-white);
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -62,6 +66,12 @@
   cursor: pointer;
 
   transition: 0.3s;
+
+  @media (orientation: portrait) {
+    fill: var(--main-white);
+
+    transform: scale(0.8);
+  }
 }
 
 .burger:hover {

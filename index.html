@@ -92,8 +92,15 @@
             </svg>
           </div>
           <div class="modal-inner">
-            <label>Max words count<input class="input" type="text" /></label>
-            <label>Type your text<textarea class="textarea" cols="30" rows="10"></textarea></label>
+            <label>Max words count<input class="input" type="number" /></label>
+            <label
+              >Type your text<textarea
+                pattern="[a-zA-Z]*"
+                class="textarea"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
           </div>
         </div>
       </div>
@@ -101,6 +108,7 @@
 
     <!-- Footer -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/modal-control.js" type="module"></script>
   </body>
 </html>

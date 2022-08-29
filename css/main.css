@@ -66,8 +66,9 @@ body {
 }
 @media (orientation: portrait) {
   body {
-    background-image: url("../images/hero.png");
-    background-size: 100%;
+    background-image: url("../images/portrait.jpg"), url("../images/main-background/main-bg.jpg");
+    background-size: 100%, 150%;
+    background-position: 0 0, 0px 680px;
   }
 }
 
@@ -97,6 +98,12 @@ body {
   margin-right: 2%;
   width: 57%;
 }
+@media (orientation: portrait) {
+  .hero-container {
+    margin-top: 750px;
+    margin-left: 20px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .hero-container {
     margin-top: 250px;
@@ -119,6 +126,13 @@ body {
     width: 600px;
   }
 }
+@media (orientation: portrait) {
+  .hero-title {
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 70px;
+  }
+}
 
 .hero-text {
   font-size: var(--main-body-text);
@@ -132,7 +146,6 @@ body {
     width: 80%;
   }
 }
-
 .hero-button {
   padding: 15px 0;
   margin-top: 40px;
@@ -147,6 +160,11 @@ body {
 }
 .hero-button:hover {
   filter: brightness(1.1);
+}
+@media (orientation: portrait) {
+  .hero-button {
+    margin-top: 20px;
+  }
 }
 
 .header-container {
@@ -186,6 +204,11 @@ body {
   display: flex;
   gap: 40px;
 }
+@media (orientation: portrait) {
+  .header-nav-list {
+    gap: 20px;
+  }
+}
 
 .header-nav-item {
   font-size: 18px;
@@ -199,7 +222,7 @@ body {
 @media (orientation: portrait) {
   .header-nav-item a {
     color: var(--main-white);
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -212,6 +235,12 @@ body {
   margin-left: auto;
   cursor: pointer;
   transition: 0.3s;
+}
+@media (orientation: portrait) {
+  .burger {
+    fill: var(--main-white);
+    transform: scale(0.8);
+  }
 }
 
 .burger:hover {

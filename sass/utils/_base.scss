@@ -9,8 +9,9 @@ body {
   background-image: url('../images/hero.png'), url('../images/main-background/main-bg.jpg');
 
   @media (orientation: portrait) {
-    background-image: url('../images/hero.png');
-    background-size: 100%;
+    background-image: url('../images/portrait.jpg'), url('../images/main-background/main-bg.jpg');
+    background-size: 100%, 150%;
+    background-position: 0 0, 0px 680px;
   }
 }
 
